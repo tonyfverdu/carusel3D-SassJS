@@ -1,0 +1,179 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,400&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  /* for touch screen */
+  touch-action: none;
+  overflow: hidden;
+  display: flex;
+  background: linear-gradient(to bottom, black 70%, rgb(102, 1, 1) 85%, red);
+  perspective: 1000px;
+  transform-style: preserve-3d;
+  font-family: "Roboto", sans-serif;
+}
+
+@keyframes spin {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(360deg);
+  }
+}
+@keyframes spinRevert {
+  from {
+    transform: rotateY(360deg);
+  }
+  to {
+    transform: rotateY(0deg);
+  }
+}
+@keyframes change-color {
+  0% {
+    background: rgba(149, 91, 3, 0.3);
+  }
+  10% {
+    background: rgba(255, 0, 0, 0.3);
+  }
+  20% {
+    background: rgba(149, 91, 3, 0.3);
+  }
+  30% {
+    background: rgba(255, 255, 0, 0.3);
+  }
+  40% {
+    background: rgba(149, 91, 3, 0.3);
+  }
+  50% {
+    background: rgba(0, 128, 0, 0.3);
+  }
+  60% {
+    background: rgba(149, 91, 3, 0.3);
+  }
+  70% {
+    background: rgba(0, 0, 255, 0.3);
+  }
+  80% {
+    background: rgba(149, 91, 3, 0.3);
+  }
+  90% {
+    background: rgba(149, 3, 142, 0.3);
+  }
+  100% {
+    background: rgba(149, 91, 3, 0.3);
+  }
+}
+.containerCentral {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  width: auto;
+  margin: auto;
+  transform-style: preserve-3d;
+  transform: rotateX(-10deg);
+  border-radius: 16px;
+  animation: change-color 5s alternate-reverse ease-in-out infinite;
+}
+.containerCentral #idimgSpinSlice {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: auto;
+  transform-style: preserve-3d;
+  transform: rotateX(-10deg);
+}
+.containerCentral #idimgSpinSlice img, .containerCentral #idimgSpinSlice video {
+  position: relative;
+  width: 100%;
+  object-fit: cover;
+  image-rendering: optimizeSpeed;
+  object-fit: fill;
+  transform-style: preserve-3d;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  line-height: 200px;
+  font-size: 50px;
+  text-align: center;
+  border-radius: 16px;
+  box-shadow: 0 0 16px rgb(246, 240, 240);
+  -webkit-box-reflect: below 10px linear-gradient(transparent, transparent, rgba(0, 0, 0, 0.3333333333));
+}
+.containerCentral #idimgSpinSlice img img:hover, .containerCentral #idimgSpinSlice img video:hover, .containerCentral #idimgSpinSlice video img:hover, .containerCentral #idimgSpinSlice video video:hover {
+  cursor: pointer;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.8666666667);
+  -webkit-box-reflect: below 10px linear-gradient(transparent, transparent, rgba(0, 0, 0, 0.4666666667));
+}
+.containerCentral #idimgSpinSlice p {
+  position: relative;
+  text-align: justify;
+  font-size: 3.8rem;
+  color: rgb(10, 10, 10);
+  margin: 1% 0%;
+  padding: 1%;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  text-align: center;
+  transform: translate(-50%, -50%) rotateX(90deg);
+  color: rgb(246, 240, 240);
+}
+
+#ground {
+  width: 900px;
+  height: 900px;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotateX(90deg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background: -webkit-radial-gradient(center center, farthest-side, rgba(153, 153, 153, 0.2), transparent);
+}
+
+.containerMusic {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  justify-content: flex-start;
+  position: absolute;
+  width: auto;
+  height: auto;
+  top: 2%;
+  left: 2%;
+  padding: 1%;
+  margin: auto;
+  box-shadow: inset 0.5rem 0.4rem 4rem 0 rgba(80, 64, 64, 0.849);
+  backdrop-filter: blur(10px);
+  border: 0.5rem solid lightgrey;
+  border-left: 0.32rem solid rgb(161, 161, 161);
+  border-bottom: 0.34rem solid rgb(97, 97, 97);
+  border-radius: 16px;
+  transition: all 0.45s ease;
+}
+.containerMusic:hove, .containerMusic :focus, .containerMusic :active {
+  cursor: pointer;
+  transform: scale(1.05);
+}
+.containerMusic:hover, .containerMusic :focus, .containerMusic :active .containerCentral {
+  animation: change-color2 10s alternate-reverse ease-in-out infinite;
+}
+
+/*# sourceMappingURL=style.css.map */

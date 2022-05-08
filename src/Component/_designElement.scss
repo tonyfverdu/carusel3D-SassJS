@@ -1,0 +1,31 @@
+//  configuration of Text  //////////////////////////////
+@mixin configurationText1 ($parColor, $parFont-size) {
+    position:  relative;
+    text-align: justify;
+    font-size: $parFont-size;
+    color: $parColor;
+    margin: 1% 0%;
+    padding:1%;
+  }
+
+// Configuration of Image  ***********************/
+@mixin figure {
+    position: relative;
+    display:  block;
+    width:    100%;
+    height:   100%;
+    margin: 0% auto;
+}
+  
+@mixin imageGenerall {
+    position: relative;
+    width: 100%;
+    object-fit: cover;
+    image-rendering: optimizeSpeed;
+}
+  
+@mixin backgroundImage {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

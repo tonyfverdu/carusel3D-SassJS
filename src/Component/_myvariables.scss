@@ -1,0 +1,90 @@
+$backgroundColorIni:  rgb(231, 230, 230);
+$backgroundColorHellGray: rgb(209, 208, 208);
+$backgroundColorDunkelGray: rgb(66, 66, 71);
+$backgroundColorDunkelGray2: rgba(23, 23, 24, 0.85);
+$backgroundColorDunkelBlack: rgba(3, 3, 3, 0.8);
+
+$backgroundColorRowTable: rgba(145, 169, 249, 0.5);
+
+$colorBorderDunkelTrek: rgba(20, 21, 53, 0.5);
+
+$colorWhite2: #fffd;
+
+$colorTextIni: rgb(9, 9, 9);
+$colorDunkel:  rgb(10, 10, 10);
+$colorDunkelSecondary:  rgba(4, 32, 52, 0.9);
+$colorHell:    rgb(246, 240, 240);
+$colorGrayHell: rgb(162, 162, 85);
+$colorAccordionHover: rgb(252, 238, 213);
+$colorRedNeu: rgb(251, 5, 5);
+$colorRedNeu2: rgb(207, 35, 35);
+$colorbackgroudneuOrange: rgb(213, 140, 4);
+
+$gradientSlice: linear-gradient(to bottom, rgba(20, 21, 53, 0.85) 75%, $backgroundColorIni);
+
+$backgroundColorTableLineaDunkel: rgba(21, 25, 88, 0.707);
+$backgroundColorTableLineaHell: rgba(130, 136, 230, 0.707);
+$colorbackgroudFacebook: #3b5998;
+$colorbackgroudTwitter: #55acee;
+$colorbackgroudGoogle: #dd4b39;
+$colorbackgroudInstagram: #ac2bac;
+$colorbackgroudLinkedin: #0082ca;
+$colorbackgroudGithub: #333333;
+$colorbackgroudMy: orange;
+
+$backgroundColorRowTable: rgba(202, 202, 220, 0.7);
+
+$colorHellCardGlass:    rgba(127, 156, 251, 0.4);
+$colorHellCardGlassBorder: rgb(224, 224, 236);
+
+
+/////////////////////////////////////////
+$backgroundColorDunkelNavbar: rgb(15, 15, 15);
+$backgroundColorDunkelTrek:#010134ef;
+$backgroundColorHellTrek: rgba(32, 42, 75, 0.947);
+
+////  SHADOW    /////////////////////////////
+$textShadowTitleHeader1: -6px -6px 3px rgba(255, 255, 255, 0.202), 6px 6px 3px rgba(91, 91, 96, 0.5);
+$boxShadow1: 0 12px 24px rgba(209, 206, 4, 0.25), 0 10px 10px rgba(0,0,0,0.3);
+$boxShadow2:0px 1px 27px 7px #1000c3;
+$boxShadow3: 1px 1px 2px 0px #f5f4f8, inset 5px 5px 8px 0px #4c4c4c, 1px 1px 2px 2px #f5f4f8;
+$boxShadow4: 1px 1px 1px 0px #c3c3c3, inset 6px 6px 10px 0px #222222, 1px 1px 1px 1px #c3c3c3;
+$boxShadow5: 0px 0px 3px 2px #5d5d63, inset 6px 6px 12px 0px #222222, 0px 0px 3px 2px #5d5d63;
+
+
+//  GLASS-MORPHISMUS
+$textShadowGlassMorphismusText1: 0.8rem 0.3rem 0.5rem rgb(91, 91, 109);
+$textShadowGlassMorphismusTextRed: 0.8rem 0.3rem 0.5rem rgb(151, 68, 68);
+
+@mixin boxShadowGlassMorpCard {
+    background: $colorHellCardGlass;
+    box-shadow: 0 1.2rem 2.1rem 0 rgba(1, 1, 68, 0.518) inset;
+    backdrop-filter: blur( 5.5px );
+    border-radius: 0.9rem;
+    border: 0.12rem solid $colorHellCardGlassBorder;
+}
+
+@mixin boxShadowGlassMorphismus1 {
+    box-shadow: inset 0.3rem 0.2rem 2rem 0 rgba(80, 64, 64, 0.849);
+    backdrop-filter: blur(10px);
+    border: 0.08rem solid lightgrey;
+    border-left: 0.14rem solid rgb(161, 161, 161);
+    border-bottom: 0.16rem solid rgb(97, 97, 97);
+    border-radius: 6%;
+}
+@mixin boxShadowGlassMorphismus2 {
+    box-shadow: inset 0.3rem 0.2rem 2rem 0 rgba(167, 70, 70, 0.849);
+    backdrop-filter: blur(10px);
+    border: 0.12rem solid rgb(210, 159, 159);
+    border-left: 0.18rem solid rgb(146, 54, 54);
+    border-bottom: 0.14rem solid rgb(93, 40, 40);
+    border-radius: 1.2rem;
+}
+@mixin boxShadowGlassMorphismus3 {
+    box-shadow: inset 0.5rem 0.4rem 4rem 0 rgba(80, 64, 64, 0.849);
+    backdrop-filter: blur(10px);
+    border: 0.5rem solid lightgrey;
+    border-left: 0.32rem solid rgb(161, 161, 161);
+    border-bottom: 0.34rem solid rgb(97, 97, 97);
+    border-radius: 16px;
+}

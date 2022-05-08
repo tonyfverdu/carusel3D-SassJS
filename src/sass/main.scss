@@ -1,0 +1,96 @@
+@use '../Component/reset';
+@use '../Component/animation' as a;
+@use '../Component/myvariables' as v;
+@use '../Component/layouts' as l;
+@use '../Component/designElement' as d;
+
+//////////////////////////////////////////////////////
+
+  .containerCentral  {
+    @include l.layoutFlexboxRowCenter;
+    width:  auto;
+    margin: auto;
+    transform-style: preserve-3d;
+    transform: rotateX(-10deg);  
+    border-radius: 16px;
+
+    animation: change-color 5s alternate-reverse ease-in-out infinite;
+
+
+    #idimgSpinSlice {
+        @include l.layoutFlexboxRowCenter;
+        margin: auto;
+        transform-style: preserve-3d;
+        transform: rotateX(-10deg);
+
+        img, video {
+            @include d.imageGenerall;
+            object-fit:fill;
+            transform-style: preserve-3d;
+            position: absolute;
+            left: 0;
+            top:  0;
+            height: 100%;
+            line-height: 200px;
+            font-size: 50px;
+            text-align: center;
+            border-radius: 16px;
+            box-shadow: 0 0 16px v.$colorHell;
+            -webkit-box-reflect: below 10px linear-gradient(transparent, transparent, #0005);  // Sehr interesant property
+    
+            img:hover, video:hover {
+                cursor: pointer;
+                box-shadow: 0 0 15px v.$colorWhite2;
+                -webkit-box-reflect: below 10px linear-gradient(transparent, transparent, #0007);
+            }
+        }
+        p {
+            @include d.configurationText1 ($parColor: v.$colorDunkel, $parFont-size: 3.8rem);
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            text-align: center;
+            transform: translate(-50%,-50%) rotateX(90deg);
+            color: v.$colorHell;
+        }
+    }  
+  }
+
+  
+  #ground {
+    width:  90%;
+    height: 90vh;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%,-50%) rotateX(180deg);
+    @include d.backgroundImage;
+    background: -webkit-radial-gradient(center center, farthest-side , #9993, transparent);
+  }
+
+  .containerMusic {
+    @include l.layoutFlexboxRowCenter;
+    justify-content: flex-start;
+    position: absolute;
+    width:  auto;
+    height: auto;
+    top:  2%;
+    left: 2%;
+    padding: 0.5%;
+    margin:  auto;
+    @include v.boxShadowGlassMorphismus2;
+  
+    transition: all 0.45s ease;
+  
+    &:hove, :focus, :active {
+      cursor: pointer;
+      transform: scale(1.05);
+      
+    }
+  
+    &:hover, :focus, :active, .containerCentral {
+      animation: change-color2 10s alternate-reverse ease-in-out infinite;
+    }
+  }
+  
+////////////////////////////////////////////////////////////  

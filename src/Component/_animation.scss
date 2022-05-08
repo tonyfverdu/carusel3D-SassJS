@@ -1,0 +1,57 @@
+@keyframes spin {
+    from{
+              transform: rotateY(0deg);
+    } to{
+              transform: rotateY(360deg);
+    }
+}
+@keyframes spinRevert {
+    from{
+              transform: rotateY(360deg);
+    } to{
+              transform: rotateY(0deg);
+    }
+}
+
+/////////////////////////////////////////////
+@keyframes change-color {
+    0% {background: rgba(149, 91, 3, 0.3);}
+    10% {background: rgba(255, 0, 0, 0.3)}
+    20% {background: rgba(149, 91, 3, 0.3);}
+    30% {background: rgba(255, 255, 0, 0.3);}
+    40% {background: rgba(149, 91, 3, 0.3);}
+    50% {background: rgba(0, 128, 0, 0.3); }
+    60% {background: rgba(149, 91, 3, 0.3);}
+    70% {background: rgba(0, 0, 255, 0.3); }
+    80% {background: rgba(149, 91, 3, 0.3);}
+    90% {background: rgba(149, 3, 142, 0.3);}
+    100% {background: rgba(149, 91, 3, 0.3);}
+}
+@keyframes change-color2 {
+
+    0%  {background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6) 15%, rgba(149, 91, 3, 0.3) 85%, rgba(255, 0, 0, 0.8));}
+    10% {background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6) 15%, rgba(255, 0, 0, 0.3) 85%, rgba(255, 0, 0, 0.8));}
+    20% {background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6) 15%, rgba(149, 91, 3, 0.3) 85%, rgba(255, 0, 0, 0.8));}
+    30% {background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6) 15%, rgba(255, 255, 0, 0.3) 85%, rgba(255, 0, 0, 0.8));}
+    40% {background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 15%, rgba(149, 91, 3, 0.3) 85%, rgba(255, 0, 0, 0.8));}
+    50% {background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 15%, rgba(0, 128, 0, 0.3) 85%, rgba(255, 0, 0, 0.8));}
+    60% {background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6) 15%, rgba(149, 91, 3, 0.3) 85%, rgba(255, 0, 0, 0.8));}
+    70% {background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6) 15%, rgba(0, 0, 255, 0.3) 85%, rgba(255, 0, 0, 0.8));}
+    80% {background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6) 15%, rgba(149, 91, 3, 0.3) 85%, rgba(255, 0, 0, 0.8));}
+    90% {background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6) 15%, rgba(149, 3, 142, 0.3) 85%, rgba(255, 0, 0, 0.8));}
+    100% {background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6) 15%, rgba(149, 91, 3, 0.3) 85%, rgba(255, 0, 0, 0.8));}
+  }
+///////////////////////////////////////////
+@keyframes change-background {
+    0% {background:  url('../../assets/img/Carousel3/cImg1.jpg'); opacity:1;}
+    10% {background: url('../../assets/img/Carousel3/cImg2.jpg'); opacity:0.98;}
+    20% {background: url('../../assets/img/Carousel3/cImg3.jpg'); opacity:0.96;}
+    30% {background: url('../../assets/img/Carousel3/cImg4.jpg'); opacity:0.94;}
+    40% {background: url('../../assets/img/Carousel3/cImg5.jpg'); opacity:0.92;}
+    50% {background: url('../../assets/img/Carousel3/cImg6.jpg'); opacity:0.90;}
+    60% {background: url('../../assets/img/Carousel3/cImg7.jpg'); opacity:0.92;}
+    70% {background: url('../../assets/img/Carousel3/cImg8.jpg'); opacity:0.94;}
+    80% {background: url('../../assets/img/Carousel3/cImg9.jpg'); opacity:0.96;}
+    90% {background: url('../../assets/img/Carousel3/cImg10.jpg');opacity:0.98;}
+    100% {background: url('../../assets/img/Carousel3/cImg11.jpg');opacity:1;}
+}
