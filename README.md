@@ -1,5 +1,7 @@
 # carusel3D-SassJS
 
+Sehen:  https://tonyfverdu.github.io/carusel3D-SassJS/
+
 **Ein Beispiel von ein Carousel 3d mit Sass und Javascript.**
 
 Es is ein bissen kompliziert das script Javascript, aber nur es gibt 2 zwei wichtige Teile: der erste ist das Design der kreisförmigen Slice-Struktur, Dimensionen und Timing, der zweite ist der EventListener der Kamera-Bewegungsereignisse mit der Maus.
